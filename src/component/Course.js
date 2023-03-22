@@ -10,8 +10,9 @@ const Course=({course})=>
      <div style={{textAlign:"center"}}>
         <Card>
           <CardBody>
-          <CardTitle><h3>{course.title}</h3></CardTitle>
+          <CardTitle><h3>{course.id}</h3></CardTitle>
           <CardText>{course.name}</CardText>
+          <CardText>{course.lang}</CardText>
           <Button color="danger" className="mx-4">Delete</Button>
           <Button color="warning">Update</Button>
           </CardBody>

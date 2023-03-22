@@ -12,7 +12,7 @@ const AllCourse = () => {
   //call to the server api
   const getAllcourse=()=>
   {
-     axios.get(`${base_url}/book/getAllBook`).then(
+     axios.get(`${base_url}/author/getAllAuthor`).then(
       (Promise)=>
       {
          console.log(Promise)
@@ -37,7 +37,9 @@ const AllCourse = () => {
              course.map((x)=>{
                console.log(x);
                 return(
-                   <Course course={x}/>
+                  //console.log(x)
+                <Course course={x}/>
+                  
                 )
              })
           } 
