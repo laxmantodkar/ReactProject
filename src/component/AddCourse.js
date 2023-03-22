@@ -5,6 +5,7 @@ import { Button, Container, Form, FormGroup, Input, Label } from "reactstrap";
 const AddCourse = () => {
     useEffect(()=>{
         document.title="Add All Course";
+        
     }, []);
     return (
         <div style={{ padding:40 }}>
